@@ -1,4 +1,6 @@
-import Human.*;
+import Human.Human;
+import Human.Man;
+import Human.Woman;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,6 +10,11 @@ public class Main {
         m.printDetails();
         w.printDetails();
 
-        System.out.println("Both " + m.name + " and " + w.name + " are humans.");
+        m.speak();
+        w.speak();
+
+        System.out.println("Both " + m.getName() + " and " + w.getName() + " are humans.");
+        System.out.println(m.getName() + " is a human: " + (m instanceof Human));
+        System.out.println(w.getName() + " is a human: " + (w instanceof Human));
     }
 }
