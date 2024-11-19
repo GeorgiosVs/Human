@@ -6,12 +6,14 @@ public class Main {
     public static void main(String[] args) {
         Man m = new Man("Alex", 180, 75, 30, "male");
         Woman w = new Woman("Jane", 165, 60, 26, "female");
+        Human h = new Human();
 
         m.printDetails();
         w.printDetails();
 
         m.speak();
         w.speak();
+        h.speak();
 
         System.out.println("Both " + m.getName() + " and " + w.getName() + " are humans.");
         System.out.println(m.getName() + " is a human: " + (m instanceof Human));
