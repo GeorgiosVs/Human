@@ -8,16 +8,19 @@ public class Human {
 
     public Human(){}
 
-    public Human(String name, double height, double weight, int age, String gender) {
+    public Human(String name, double height, double weight, int age) {
         this.name = name;
         this.height = height;
         this.weight = weight;
         this.age = age;
-        this.gender = gender;
     }
 
     public String getGender() {
         return gender;
+    }
+
+    protected void setGender(String gender) {
+        this.gender = gender;
     }
 
     public String getName() {

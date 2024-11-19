@@ -4,8 +4,8 @@ import Human.Woman;
 
 public class Main {
     public static void main(String[] args) {
-        Man m = new Man("Alex", 180, 75, 30, "male");
-        Woman w = new Woman("Jane", 165, 60, 26, "female");
+        Man m = new Man("Alex", 180, 75, 30);
+        Woman w = new Woman("Jane", 165, 60, 26);
         Human h = new Human();
 
         m.printDetails();
